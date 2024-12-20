@@ -1,63 +1,69 @@
-Assembly: End Game Project
+# Assembly: End Game
 
-Overview
+## Overview
 
-The Assembly: End Game project is an interactive word-guessing game created using React.js and powered by Vite for a smooth development experience. In this game, users are given 8 chances to guess the correct letters of a word. For every incorrect guess, one programming language is removed from the display, and if all 8 chances are used up, the only language left is Assembly.
+**Assembly: End Game** is an interactive word-guessing game built using **React.js** and powered by **Vite** for an optimized and smooth development experience. The game challenges users to guess the correct letters of a word within 8 chances. For every incorrect guess, a programming language is removed from the display. If the user fails to guess the word in 8 attempts, **Assembly** language remains, marking the end of the game.
 
-How It Works
+---
 
-The user is presented with a hidden word they need to guess, letter by letter.
+## Features
 
-They have a total of 8 chances to guess the correct letters.
+- **React.js**: Utilizes React components for dynamic rendering and efficient state management.
+- **Vite**: A fast and optimized build tool that enhances the development experience.
+- **Interactive Gameplay**: Users can guess letters, with real-time updates based on their guesses.
+- **Visual Feedback**: Incorrect guesses result in the removal of programming languages, providing clear visual feedback to the player.
 
-For each incorrect guess, one language from the display is removed.
+---
 
-If all 8 chances are used without guessing the correct word, Assembly language will be the only one remaining, signaling the end of the game.
+## Installation
 
-Features
+To set up the project locally, follow these steps:
 
-React.js: Utilizes React components for dynamic rendering and state management.
+1. Clone this repository to your local machine:
 
-Vite: Ensures fast and efficient development with its optimized build tool.
+   ```bash
+   git clone https://github.com/Sunilkumar371/Assembly-End-Game.git
+   ```
 
-Interactive Gameplay: Users guess letters and see the results in real-time.
+2. Navigate to the project directory:
 
-Visual Feedback: Incorrect guesses result in the removal of programming languages from the display.
+   ```bash
+   cd assembly-end-game
+   ```
 
-Installation
+3. Install the dependencies using npm:
 
-Clone this repository to your local machine.
+   ```bash
+   npm install
+   ```
 
-git clone https://github.com/Sunilkumar371/Assembly-End-Game.git
+4. Start the development server:
 
-Navigate to the project directory.
+   ```bash
+   npm run dev
+   ```
 
-cd assembly-end-game
+   The application will be available in your browser at `http://localhost:3000`.
 
-Install the dependencies using npm.
+---
 
-npm install
+## How to Play
 
-Start the development server.
+1. After running the project, the game interface will appear in your browser.
+2. The user will see a hidden word represented by underscores, and they can start guessing letters.
+3. For every incorrect guess, one programming language will be removed from the display.
+4. If the user makes 8 incorrect guesses, **Assembly** language will remain, signaling the end of the game.
 
-npm run dev
+---
 
-How to Play
+## Technologies Used
 
-After running the project, the game interface will be displayed in the browser.
+- **React.js**: For building the interactive user interface.
+- **Vite**: As the build tool to ensure fast development and optimization.
+- **CSS**: For styling the game interface and ensuring a smooth user experience.
 
-The user will see a hidden word represented by underscores.
+---
 
-They can click on letters to guess the correct word.
+## License
 
-For each incorrect guess, one language will be removed from the display.
-
-If the user makes 8 incorrect guesses, only Assembly language will remain, indicating the end of the game.
-
-Technologies Used
-
-React.js: For building the user interface.
-
-Vite: As the development environment and build tool.
-
-CSS: For styling the game interface.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
