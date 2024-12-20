@@ -28,7 +28,7 @@ Installation
 
 Clone this repository to your local machine.
 
-git clone https://github.com/your-username/assembly-end-game.git
+git clone https://github.com/Sunilkumar371/Assembly-End-Game.git
 
 Navigate to the project directory.
 
