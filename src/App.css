@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+}
+header > h1 {
+  font-family: Hanken Grotesk;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #f9f4da;
+  margin: 20px 0 0;
+}
+header > p {
+  font-family: Hanken Grotesk;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #8e8e8e;
+}
+.win-style {
+  max-width: 1200px;
+  margin: 30px auto;
+  /* width: 100%; */
+  border-radius: 4px;
+  color: #f9f4da;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60px;
+  /* margin-block: 30px; */
+}
+.win-style.won {
+  background: #10a95b;
+}
+.win-style.lost {
+  background: #ba2a2a;
+}
+.win-style > h2 {
+  margin: 0;
+  font-family: Hanken Grotesk;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 26.06px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 10px 0;
+  text-align: center;
+}
+.win-style > p {
+  margin: 0;
+  font-family: Hanken Grotesk;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 20.85px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 10px 0;
+  text-align: center;
+}
+.win-style.farewell {
+  background: #7a5ea7;
+  border: 1px dashed #323232;
+  display: flex;
+  justify-content: center;
+  font-family: Hanken Grotesk;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20.85px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.LanguageEl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin: 10px auto;
+  max-width: 450px;
+}
+span.Language {
+  border-radius: 6px;
+  padding: 4px;
+  position: relative;
+}
+span.Language.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.word {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px 0;
+}
+
+.word > span {
+  width: 40px;
+  height: 40px;
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  border-bottom: 1px solid #f9f4da;
+  font-family: Hanken Grotesk;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 23.45px;
+  text-underline-position: from-font;
+  color: #f9f4da;
+}
+.word > span.reveal-letter {
+  color: #ec5d49;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 0px auto;
+  max-width: 600px;
+}
+.keyboard > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  padding: 6px;
+  background: #fcba29;
+  color: #1e1e1e;
+  border: 1px solid #d7d7d7;
+  font-family: Hanken Grotesk;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 20.85px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.keyboard > button.correct {
+  ustify-content: center;
+  align-items: center;
+  background: #10a95b;
+}
+.keyboard > button.wrong {
+  background: #ec5d49;
+}
+.newGame {
+  background: #11b5e5;
+  border: 1px solid #d7d7d7;
+  padding: 6px 12px 6px 12px;
+  gap: 6px;
+  border-radius: 4px;
+  border: 1px;
+  font-family: Hanken Grotesk;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 20.85px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1e1e1e;
+  width: 250px;
+  height: 50px;
+  margin: 30px 0px 5px;
+}
+button.newGame {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1.25rem;
+    margin: 2px 0;
+  }
+  .win-style h2,
+  .win-style p {
+    font-size: 1.25rem;
+    margin: 0px;
+  }
+
+  .keyboard > button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .newGame {
+    width: 200px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .word > span {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .win-style {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .keyboard > button {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .newGame {
+    width: 180px;
+    height: 40px;
+    margin: 5px 0 3px;
+  }
+}
+@media (max-width: 480px) {
+  .word {
+    padding: 10px 0 15px;
+  }
+}
